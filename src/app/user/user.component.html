@@ -1,0 +1,58 @@
+<div class="container">
+    <nav class="navlist">
+        <ul>
+            <li (click)="toggleDetails()"><a href="#">users</a></li>
+            <li><a href="#">winners</a></li>
+            <li><a href="#">topers</a></li>
+        </ul>
+    </nav>
+
+   
+   <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 500px;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">winners</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div>
+            <form #usersForm="ngForm" (ngSubmit)="UserFormData(usersForm.value)">
+                <div class="mb-3">
+                  <label for="name"  class="form-label">Name</label>
+                  <input type="text"  class="form-control" id="name" aria-describedby="emailHelp">
+                  </div>
+                <div class="mb-3">
+                  <label for="score"  class="form-label">Score</label>
+                  <input type="text" class="form-control" id="score">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"  style="background: lightgray;">Confirm</button>
+                </div>
+               </form>
+             </div>
+        
+      </div>
+    </div>
+  </div>
+  
+    <table class="table table-bordered" id="users" *ngIf="showDetails">
+        <thead>
+            <tr >
+              <th>User Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+
+        <tbody  *ngFor="let user of users">
+            <tr *ngIf="user.age < 21">
+                <td>{{user.name}}</td>
+                <td>{{user.score}}</td>
+                <td>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to winners</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

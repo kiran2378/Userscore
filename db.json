@@ -1,0 +1,101 @@
+{
+  "Users": [
+    {
+      "name": "Dinesh",
+      "age": "19",
+      "score": "98"
+    },
+
+    {
+      "name": "Harish",
+      "age": "20",
+      "score": "106"
+    },
+    
+    {
+      "name": "Manoj",
+      "age": "25",
+      "score": "86"
+    },
+
+    {
+      "name": "Kushal",
+      "age": "21",
+      "score": "120 "
+    },
+
+    {
+      "name": "Kishore",
+      "age": "27",
+      "score": "160"
+    },
+
+    {
+      "name": "Murali",
+      "age": "18",
+      "score": "158"
+    },
+
+    {
+      "name": "Shravan",
+      "age": "17",
+      "score": "140"
+    },
+
+    {
+      "name": "ShashiKumar",
+      "age": "12",
+      "score": "136"
+    },
+
+    {
+      "name": "Manu",
+      "age": "11",
+      "score": "78"
+    },
+
+    {
+      "name": "Karthik",
+      "age": "30",
+      "score": "120"
+    },
+
+    {
+      "name": "Harish",
+      "age": "13",
+      "score": "118"
+    },
+
+    {
+      "name": "Vinod",
+      "age": "16",
+      "score": "146"
+    },
+
+    {
+      "name": "Arun",
+      "age": "25",
+      "score": "82"
+    },
+
+    {
+      "name": "Prakash",
+      "age": "21",
+      "score": "108"
+    },
+
+    {
+      "name": "Pranav",
+      "age": "19",
+      "score": "72"
+    },
+
+    {
+      "name": "Sharath",
+      "age": "29",
+      "score": "134"
+    }
+
+  ]
+  
+}
